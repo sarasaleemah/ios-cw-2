@@ -17,15 +17,40 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func AddAnimalToArray(_ sender: Any) {
-        var animal = animalTextField.text!
         
+        var animal = animalTextField.text!
+//        var an = animalEmojiLabel.text!
         
         // MARK: - 1️⃣ emojiArray  الي  animal قم باضافه متغير
         
+        emojiArray.append(animal)
         
-        
-        
-        
+//        if animal == "قطه"
+//        {
+//            emojiArray.append("🐱")
+//        } else if animal == "ارنب"
+//               {
+//                   emojiArray.append("🐰")
+//               } else if animal == "باندا"
+//        {
+//                   emojiArray.append("🐼")
+//               }else
+//               {
+//                          emojiArray.append("❓")
+//                      }
+//        if animal == "قطه"
+//        {
+//            emojiArray.append("🐱")
+//        } else if animal == "ارنب"
+//               {
+//                   emojiArray.append("🐰")
+//               } else if animal == "باندا"
+//        {
+//                   emojiArray.append("🐼")
+//               }else if (animal == "فراشه")
+//               {
+//                          emojiArray.append("❓")
+//                      }
         
         
         // MARK: - لا تقم بتغيير هذا السطر⚠️⚠️
@@ -35,10 +60,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         for label in emojiArray
         {
             animalEmojiLabel.text! += label
+           
         }
         /// **BONUS**: 🎁 قم بمسح مكونات المصفوفة بعد عرضها
-   
-    
+// I tried my best but it didn't work 😿
+// emojiArray.removeAll()
         
         
         
